@@ -1,0 +1,96 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+import:
+  - ~/.config/alacritty/colors.yml
+  # - ~/.config/alacritty/fonts.yml
+
+env:
+  TERM: alacritty
+
+window:
+  #dimensions:
+  #  columns: 0
+  #  lines: 0
+
+  #position:
+  #  x: 0
+  #  y: 0
+
+  padding:
+    x: 6
+    y: 6
+
+  dynamic_padding: true
+  decorations: full
+  opacity: 0.75
+  startup_mode: Windowed
+  title: Alacritty
+  dynamic_title: true
+
+  # Window class (Linux/BSD only):
+  #class:
+  # Application instance name
+  #instance: Alacritty
+  # General application class
+  #general: Alacritty
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+# Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    family: monospace
+    style: Regular
+
+  # Bold font face
+  bold:
+    family: monospace
+    style: Bold
+
+  # Italic font face
+  italic:
+    family: monospace
+    style: Italic
+
+  # Bold italic font face
+  bold_italic:
+    family: monospace
+    style: Bold Italic
+
+  # Point size
+  size: 8.0
+
+  #offset:
+  #  x: 0
+  #  y: 0
+
+  #glyph_offset:
+  #  x: 0
+  #  y: 0
+
+  builtin_box_drawing: true
+
+draw_bold_text_with_bright_colors: true
+
+selection:
+  save_to_clipboard: true
+
+cursor:
+  style:
+    shape: Underline
+    blinking: on
+
+live_config_reload: true
+
+#shell:
+#  program: /bin/bash
+#  args:
+#    - --login
+
+#working_directory: None
+
+mouse:
+  hide_when_typing: true
