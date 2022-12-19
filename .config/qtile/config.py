@@ -8,6 +8,7 @@ from settings.layouts import layouts, floating_layout
 from settings.screens import screens
 from settings.widgets import widget_defaults, extension_defaults
 from settings.mouse import mouse
+from libqtile.dgroups import simple_key_binder
 
 
 @hook.subscribe.startup_once
@@ -16,7 +17,8 @@ def autostart():
     subprocess.run([home])
 
 
-dgroups_key_binder = None
+dgroups_key_binder = simple_key_binder(mod)
+# dgroups_key_binder = None
 dgroups_app_rules = []  # type: list
 follow_mouse_focus = True
 bring_front_click = False
