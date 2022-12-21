@@ -11,7 +11,7 @@ from settings.mouse import mouse
 from libqtile.dgroups import simple_key_binder
 
 
-@hook.subscribe.startup_once
+@hook.subscribe.startup
 def autostart():
     home = os.path.expanduser('~/.config/qtile/autostart.sh')
     subprocess.run([home])
