@@ -6,6 +6,11 @@
 super + Return
 	alacritty
 
+# floating terminal
+super + shift + Return
+    alacritty --class 'alacritty-float' -o window.opacity=0.5 window.dimensions.columns=160 window.dimensions.lines=40
+
+
 # program launcher
 super + @space
 	dmenu_run
@@ -46,6 +51,10 @@ super + Print
 Menu
 	screenkey
 
+# Scratchpad hotkey 
+super + u
+    id=$(cat /tmp/scratchid);\
+    bspc node $id --flag hidden;bspc node -f $id
 
 
 #

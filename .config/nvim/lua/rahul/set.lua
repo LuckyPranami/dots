@@ -28,5 +28,8 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
+-- let g:netrw_banner = 0
+vim.g.netrw_banner = 0
+
 -- vim.opt.colorcolumn = "80"
 vim.g.mapleader = " "

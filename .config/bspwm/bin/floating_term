@@ -1,0 +1,7 @@
+#!/usr/bin/sh
+
+alacritty --class 'alacritty-float,alacritty-float' \
+    -o window.dimensions.columns=140 \
+    window.dimensions.lines=35 \
+    window.opacity=0.5
+

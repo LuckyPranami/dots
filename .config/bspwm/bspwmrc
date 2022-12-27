@@ -97,3 +97,13 @@ for i in ${floating[@]}; do
 
 bspc rule -a Conky state=floating manage=off
 bspc rule -a stalonetray state=floating manage=off
+
+# Scratchpad
+bspc rule -a scratchpad sticky=on state=floating hidden=on
+# check scratchpad already running
+[ "$(ps -x | grep -c 'scratchpad')" -eq "1" ] && floating_term -c scratchpad -e ~/.config/bspwm/bin/scratch &
+
+# using class class 
+bspc rule -a dropdown sticky=on state=floating hidden=on
+alacritty --class dropdown -e "zsh -i &"
+
