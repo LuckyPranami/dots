@@ -1,11 +1,13 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
 import:
-  - ~/.config/alacritty/colors.yml
+  # - ~/.config/alacritty/colors.yml
   - ~/.config/alacritty/fonts.yml
+  - ~/.config/alacritty/colors/dracula.yml
 
 env:
-  TERM: alacritty
+  TERM: xterm-256color
+  # TERM: alacritty
 
 window:
   #dimensions:
