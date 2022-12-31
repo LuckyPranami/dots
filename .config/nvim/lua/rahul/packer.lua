@@ -49,7 +49,7 @@ return require('packer').startup(function(use)
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
-
+  use('ap/vim-css-color')
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  requires = {
